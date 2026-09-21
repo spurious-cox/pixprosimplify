@@ -51,6 +51,10 @@ which is what keeps macOS's Automation grant alive across rebuilds.
 `~/My_Applications/_signing/pixpro_release.sh all <App>` signs and notarizes;
 `pixpro_publish.sh <App>` wraps it in the DMG and updates the cask.
 
+## Problems or suggestions
+
+Open an issue: https://github.com/spurious-cox/pixprosimplify/issues
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
