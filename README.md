@@ -1,4 +1,4 @@
-# PixProSimplify
+# PixProSimplify 2.5.3
 
 Reduces the number of anchor points in a Pixelmator Pro shape while keeping
 the shape looking the same. Pixelmator has no simplify-path command and its
@@ -13,9 +13,6 @@ or install it with Homebrew:
 ```
 brew install --cask spurious-cox/tap/pixprosimplify
 ```
-
-*2.5.3 fixes a first run that could hang with nothing on screen, and makes the version in its dialogs match the app again.*
-
 Requires Pixelmator Pro. Both the 3.x build and the Creator Studio build work;
 the app binds to whichever one is in front or has a document open.
 
