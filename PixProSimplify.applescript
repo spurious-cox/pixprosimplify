@@ -59,7 +59,7 @@
 -- ============================================================
 property kPixIDs : {"com.apple.pixelmator", "com.pixelmatorteam.pixelmator.x"}
 
-property scriptVersion : "2.5.3"
+property scriptVersion : "2.5.4"
 
 -- ============================================================
 -- UPDATE CHECK (reports only, never downloads)

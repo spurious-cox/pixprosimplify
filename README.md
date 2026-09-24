@@ -1,4 +1,4 @@
-# PixProSimplify 2.5.3
+# PixProSimplify 2.5.4
 
 Reduces the number of anchor points in a Pixelmator Pro shape while keeping
 the shape looking the same. Pixelmator has no simplify-path command and its
