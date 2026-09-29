@@ -10,9 +10,9 @@ so the applet works by round-tripping the layer through SVG and a custom
 Python reduction engine.
 
 Applet:   /Applications/PixProSimplify.app
-Engine:   ~/bin/pixpro_simplify_engine.py   (analysis + reduction driver)
-Reducer:  ~/bin/pixpro_reduce.py            (the point-reduction algorithm)
-Source:   ~/My_Applications/PixProSimplify/PixProSimplify.applescript
+Engine:   pixpro_simplify_engine.py, inside the app (analysis + reduction driver)
+Reducer:  pixpro_reduce.py, inside the app (the point-reduction algorithm)
+Source:   PixProSimplify.applescript in this repository
 
 
 -----------------------------------------------------------------------------
@@ -208,8 +208,7 @@ v2.2  (2026-08-10)
 v2.3  (2026-08-11)
     Self-contained. The reduction engine and its reducer ship inside the
     bundle (Contents/Resources) and are found with `path to resource`, so the
-    app no longer needs ~/bin to exist. It falls back to ~/bin if the bundled
-    resources are absent.
+    app depends on no external copy of them.
 
 
 v2.4.0  (2026-08-15)

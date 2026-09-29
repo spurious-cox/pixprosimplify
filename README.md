@@ -1,4 +1,4 @@
-# PixProSimplify 2.5.4
+# PixProSimplify 2.5.5
 
 Reduces the number of anchor points in a Pixelmator Pro shape while keeping
 the shape looking the same. Pixelmator has no simplify-path command and its
@@ -38,7 +38,7 @@ text layer itself is kept, hidden.
 
 Ramer–Douglas–Peucker run over the bezier anchors, with the three levels
 estimated per shape by the error-elbow method rather than fixed. The engine and
-its reducer ship inside the app bundle, so nothing depends on `~/bin` existing.
+its reducer ship inside the app bundle, so nothing outside the app is needed.
 
 ## Building
 
@@ -46,10 +46,8 @@ its reducer ship inside the app bundle, so nothing depends on `~/bin` existing.
 osacompile -o /tmp/PixProSimplify.scpt PixProSimplify.applescript
 ```
 
-Signing uses a Developer ID certificate selected by SHA-1 hash and timestamped,
-which is what keeps macOS's Automation grant alive across rebuilds.
-`~/My_Applications/_signing/pixpro_release.sh all <App>` signs and notarizes;
-`pixpro_publish.sh <App>` wraps it in the DMG and updates the cask.
+The app is signed with a timestamped Developer ID certificate, which keeps
+macOS's Automation grant alive across rebuilds, then notarized and stapled.
 
 ## Problems or suggestions
 
